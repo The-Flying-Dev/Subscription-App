@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'users/info', to: 'users#info'
+
   root to: 'home#index'
   devise_for :users
   resources :publications, only: [:index,:show]
