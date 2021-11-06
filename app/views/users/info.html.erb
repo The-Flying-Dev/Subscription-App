@@ -1,2 +1,9 @@
 <h1>Users#info</h1>
-<p>Find me in app/views/users/info.html.erb</p>
+<%= current_user.email %>
+<% if @subscription.active %>
+  subscribed
+<% else %>
+ unsubscribed
+<% end %>
+
+

@@ -6,7 +6,7 @@
   <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
     <div class="navbar-nav">
       <% if user_signed_in? %>
-        <a href="#">Signed in as <%= current_user.email %></a>
+        <a href="#"><%= link_to current_user.email, users_info_path %></a>
         <a class="nav-link"  href="#"><%= link_to "Sign out", destroy_user_session_path, method: :delete %></a>
       <% else %>   
       <a class="nav-link" href="#"><%= link_to "Sign_in", new_user_session_path %></a>
