@@ -1,24 +1,4 @@
-# README
+# Plurasight Subscription App
+<hr>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+[Integrating payments with Ruby on Rails using Stripe](https://app.pluralsight.com/course-player?courseId=c9f65fab-efaa-4714-aac0-0740991fb7a1)
