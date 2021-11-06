@@ -1,4 +1,5 @@
 class PublicationsController < ApplicationController
+    before_action :check_for_subscription, only: :show
     def index 
         @publications = Publication.all
     end
@@ -11,4 +12,12 @@ class PublicationsController < ApplicationController
     def publication_params
       params.require(:publication).permit(:title,:description)
     end
+
+    def check_for_subscription
+      unless current_user.subscription.active
+        flash[:alert] = 'You must be subscribed to access this content.'
+        redirect_to publications_path
+      end
+    end
+    
 end
