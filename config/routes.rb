@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'users/info', to: 'users#info'
+  post '/users/charge', to: 'users#charge'
 
   root to: 'home#index'
   devise_for :users
